@@ -1,0 +1,8 @@
+config SHIELD_LIAISON_LEFT
+    def_bool $(shields_list_contains,liaison_left)
+
+config SHIELD_LIAISON_RIGHT
+    def_bool $(shields_list_contains,liaison_right)
+
+config SHIELD_LIAISON_DONGLE
+    def_bool $(shields_list_contains,liaison_dongle)

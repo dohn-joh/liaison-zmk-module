@@ -1,0 +1,16 @@
+if SHIELD_LIAISON_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "liaison"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_LIAISON_LEFT || SHIELD_LIAISON_RIGHT || SHIELD_LIAISON_DONGLE
+
+config ZMK_SPLIT
+    default y
+
+endif
